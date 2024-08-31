@@ -39,11 +39,6 @@
   (destructuring-bind (s1 s2 s3) (sort (multiple-value-list (parse-input input)) #'<)
     (+ s1 s1 s2 s2 (* s1 s2 s3))))
 
-(defun solve-first ()
-  (loop
-    for line in (uiop:read-file-lines "inputs/day2.txt")
-    sum (wrapping-paper line)))
-
 (defun solve-second ()
   (loop
     for line in (uiop:read-file-lines "inputs/day2.txt")
