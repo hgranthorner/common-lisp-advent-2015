@@ -1,7 +1,7 @@
 (asdf:defsystem :advent2015
   :version "0.1.0"
   :serial t
-  :depends-on (:str :alexandria)
+  :depends-on (:str :alexandria :yason)
   :components ((:file "day1")
                (:file "day2")
                (:file "day3")
@@ -13,4 +13,7 @@
                (:file "day9")
                (:file "day10")
                (:file "day11")
+               (:file "day12")
                ))
+
+(asdf:load-system :advent2015)

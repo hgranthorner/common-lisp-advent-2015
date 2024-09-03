@@ -16,3 +16,4 @@ net.didierverna.asdf-flv, ghcr.io/ocicl/iterate@sha256:398e3747b164f42e1a19fccf9
 alexandria, ghcr.io/ocicl/iterate@sha256:398e3747b164f42e1a19fccf974bdf9c2a7938660f9bead1bb052124d58b5476, iterate-20240503-26cf129/ext/alexandria/alexandria.asd
 alexandria-tests, ghcr.io/ocicl/iterate@sha256:398e3747b164f42e1a19fccf974bdf9c2a7938660f9bead1bb052124d58b5476, iterate-20240503-26cf129/ext/alexandria/alexandria-tests.asd
 iterate, ghcr.io/ocicl/iterate@sha256:398e3747b164f42e1a19fccf974bdf9c2a7938660f9bead1bb052124d58b5476, iterate-20240503-26cf129/iterate.asd
+yason, ghcr.io/ocicl/yason@sha256:4a1ce0b1cab070be2a87569feeb61bfc44f41ae0c804af2c0c71ab594f80db40, yason-20240503-f4ad893/yason.asd
