@@ -13,8 +13,8 @@ Dublin to Belfast = 141"))
   (declare (type string s))
   (destructuring-bind (start _to end _= distance) (str:words (str:trim s))
     (declare (ignore _to _=))
-    (cons (make-trip :start end :end start :distance distance)
-          (make-trip :start start :end end :distance distance))))
+    (cons (make-trip :start end :end start :length distance)
+          (make-trip :start start :end end :length distance))))
 
 (defun all-locations (trips)
   (remove-duplicates (append (mapcar #'trip-start trips) (mapcar #'trip-end trips)) :test 'equal))
@@ -46,7 +46,7 @@ Dublin to Belfast = 141"))
 
 (defun calc-all-trips (trip-tree total-so-far)
   (loop for trip-branch in trip-tree
-        for distance = (parse-integer (trip-distance (car trip-branch)))
+        for distance = (parse-integer (trip-length (car trip-branch)))
         if (not (cdr trip-branch))
           return (+ distance total-so-far)
         end
